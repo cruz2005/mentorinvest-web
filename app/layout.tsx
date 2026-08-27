@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Syne } from "next/font/google";
 import "./globals.css";
-import IntroAnimation from "@/components/IntroAnimation";
 import LocaleProvider from "@/components/LocaleProvider";
 
 const geist = Geist({
@@ -37,12 +36,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${geist.variable} ${syne.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">
-        <div
-          id="intro-overlay"
-          style={{ position: "fixed", inset: 0, background: "#000000", zIndex: 9999 }}
-        />
         <LocaleProvider>
-          <IntroAnimation />
           {children}
         </LocaleProvider>
       </body>
