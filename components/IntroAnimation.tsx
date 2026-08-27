@@ -37,7 +37,7 @@ export default function IntroAnimation() {
         position: "fixed",
         inset: 0,
         zIndex: 9999,
-        background: "#080a0e",
+        background: "#000000",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

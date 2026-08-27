@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "Analysez les marchés, obtenez des analyses avec votre Mentor et prenez de meilleures décisions avec MentorInvest.",
   icons: {
     icon: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "MentorInvest",
@@ -38,7 +39,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col antialiased">
         <div
           id="intro-overlay"
-          style={{ position: "fixed", inset: 0, background: "#080a0e", zIndex: 9999 }}
+          style={{ position: "fixed", inset: 0, background: "#000000", zIndex: 9999 }}
         />
         <LocaleProvider>
           <IntroAnimation />
