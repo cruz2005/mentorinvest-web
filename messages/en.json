@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "features": "Features",
+    "overview": "Overview",
+    "pricing": "Pricing",
+    "guide": "Guide",
+    "download": "Download for free",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "marketClosed": "Closed"
+  },
+  "common": {
+    "comingSoon": "Coming soon",
+    "comingSoonStores": "Coming soon to the App Store & Google Play",
+    "emailPlaceholder": "you@email.com",
+    "joinedWaitlist": "You're on the list — we'll be in touch at launch!",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "availableNow": "Available now · iOS & Android"
+  },
+  "hero": {
+    "titleWhite": "Analyze the markets",
+    "titleGradient": "like a pro.",
+    "description": "MentorInvest gives you access to real-time markets, a personal AI-powered Mentor, and financial news — all in a single app.",
+    "chipLive": "Live markets",
+    "chipMentor": "Mentor",
+    "chipSecure": "Secure data",
+    "joinButton": "Join",
+    "freeNoCard": "Free · No credit card required",
+    "waitlistNote": "Be among the first to access MentorInvest. Leave your email and get exclusive access to the launch date, early adopter offers, and a free beta.",
+    "statAssetsValue": "50+",
+    "statAssetsLabel": "Assets tracked",
+    "statMentorValue": "Mentor",
+    "statMentorLabel": "Built into the app",
+    "statLiveValue": "Live",
+    "statLiveLabel": "Real-time data"
+  },
+  "features": {
+    "badge": "Features",
+    "titleWhite": "Everything you",
+    "titleGradient": "need",
+    "subtitle": "A complete suite of professional tools, right in your pocket.",
+    "items": [
+      {
+        "title": "Real-time markets",
+        "description": "Track your favorite assets live — crypto, stocks, forex, indices",
+        "tag": "Live"
+      },
+      {
+        "title": "4 chart types",
+        "description": "Candles, Bars, Line, Area — adapt the view to your analysis style",
+        "tag": ""
+      },
+      {
+        "title": "AI Mentor",
+        "description": "Your personal assistant that analyzes markets and answers your questions instantly",
+        "tag": ""
+      },
+      {
+        "title": "3D Globe — 3 modes",
+        "description": "Visualize global markets in real time (Normal / Live / Macro)",
+        "tag": "3 modes"
+      },
+      {
+        "title": "Financial news",
+        "description": "News filtered by asset, in real time",
+        "tag": "24/7"
+      },
+      {
+        "title": "Custom watchlist",
+        "description": "Add and track your favorite assets with ease",
+        "tag": ""
+      },
+      {
+        "title": "Price alerts",
+        "description": "Get notified the moment an asset hits your target price",
+        "tag": "Alerts"
+      },
+      {
+        "title": "Economic calendar",
+        "description": "Anticipate the events that move the markets",
+        "tag": "Macro"
+      }
+    ]
+  },
+  "screenshots": {
+    "badge": "App preview",
+    "titleWhite": "The app built for",
+    "titleGradient": "every investor",
+    "subtitle": "A premium design inspired by the best institutional trading tools.",
+    "tabs": ["Markets", "Mentor", "News", "Profile"]
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "titleWhite": "Simple and",
+    "titleGradient": "transparent",
+    "subtitle": "Choose the plan that fits your analysis style.",
+    "perMonth": "/month",
+    "mostPopular": "Most popular",
+    "toggleMonthly": "Monthly",
+    "toggleAnnual": "Annual",
+    "annualDiscountTag": "-25%",
+    "noCommitment": "No commitment, cancel anytime",
+    "annual": {
+      "name": "Pro Annual",
+      "monthlyEquivalent": "22.42",
+      "yearlyNote": "billed as €269/year",
+      "savingsBadge": "Save €90/year",
+      "commitment": "12-month commitment"
+    },
+    "plans": [
+      {
+        "name": "Free",
+        "desc": "To start analyzing the markets.",
+        "features": [
+          "Full chart (all types)",
+          "All technical indicators",
+          "General news",
+          "5 Mentor analyses/week",
+          "5-asset watchlist"
+        ],
+        "cta": "Start for free"
+      },
+      {
+        "name": "Analyst",
+        "desc": "For active traders who want an analytical edge.",
+        "features": [
+          "Everything in Free",
+          "Unlimited price alerts",
+          "Full fundamental data",
+          "Full economic calendar",
+          "Enriched news per asset",
+          "3D Globe Live + Macro modes",
+          "20 Mentor analyses/day",
+          "20-asset watchlist"
+        ],
+        "cta": "Start for free"
+      },
+      {
+        "name": "Pro",
+        "desc": "For analysts who want it all.",
+        "features": [
+          "Everything in Analyst",
+          "Unlimited Mentor analyses",
+          "Automatic AI pattern detection",
+          "Up to 4 simultaneous multi-charts",
+          "Unlimited watchlist"
+        ],
+        "cta": "Start for free"
+      }
+    ]
+  },
+  "cta": {
+    "titleWhite": "Ready to analyze",
+    "titleGradient": "differently?",
+    "description": "Be among the first to access MentorInvest. Leave your email and get exclusive access to the launch date, early adopter offers, and early access.",
+    "joinButton": "Join the waitlist"
+  },
+  "footer": {
+    "tagline": "Analyze the markets like a pro. Real-time data, AI Mentor and financial news in a single app.",
+    "columns": [
+      {
+        "title": "Application",
+        "links": [
+          { "label": "Features" },
+          { "label": "Overview" },
+          { "label": "Pricing" },
+          { "label": "Guide" }
+        ]
+      },
+      {
+        "title": "Help",
+        "links": [
+          { "label": "Help center" },
+          { "label": "Contact us" },
+          { "label": "How it works" }
+        ]
+      },
+      {
+        "title": "About",
+        "links": [
+          { "label": "About MentorInvest" },
+          { "label": "Our mission" },
+          { "label": "Legal notice" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Privacy policy" },
+          { "label": "Terms of service" },
+          { "label": "Legal notice" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 MentorInvest. All rights reserved.",
+    "disclaimer": "MentorInvest is a market analysis tool. The information provided does not constitute investment advice."
+  }
+}

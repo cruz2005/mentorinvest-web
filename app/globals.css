@@ -1,26 +1,218 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #0B0E15;
+  --surface: #131722;
+  --surface2: #1E222D;
+  --primary: #2962FF;
+  --text: #FFFFFF;
+  --text-sub: #787B86;
+  --text-muted: #D1D4DC;
+  --border: #2A2E39;
+  --up: #089981;
+  --down: #F23645;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-syne: var(--font-syne);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(41, 98, 255, 0.3);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-sub);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(41,98,255,0.3); }
+  50% { box-shadow: 0 0 40px rgba(41,98,255,0.6); }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-ticker {
+  animation: ticker 70s linear infinite;
+}
+
+
+.glow-blue {
+  box-shadow: 0 0 30px rgba(41, 98, 255, 0.25);
+}
+
+.glow-blue-strong {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #A0B4FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-blue {
+  background: linear-gradient(135deg, #2962FF 0%, #00D4FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-glass {
+  background: rgba(19, 23, 34, 0.8);
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(20px);
+}
+
+.card-glass:hover {
+  border-color: rgba(41, 98, 255, 0.3);
+  background: rgba(19, 23, 34, 0.95);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(41,98,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(41,98,255,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.noise-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* ── Document légal premium (mentions légales, CGU, confidentialité) ── */
+.legal-prose h3 {
+  color: #f0f4ff;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.legal-prose h3:first-child {
+  margin-top: 0;
+}
+
+.legal-prose p {
+  color: rgba(240, 244, 255, 0.62);
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.legal-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-prose ul,
+.legal-prose ol {
+  color: rgba(240, 244, 255, 0.62);
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 0 0 14px;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legal-prose ul { list-style-type: disc; }
+.legal-prose ol { list-style-type: decimal; }
+.legal-prose li::marker { color: rgba(79, 131, 255, 0.7); }
+.legal-prose li strong { color: rgba(240, 244, 255, 0.85); }
+
+.legal-prose a {
+  color: #4f83ff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-prose a:hover {
+  color: #7fa6ff;
+}
+
+.legal-prose strong {
+  color: #f0f4ff;
+  font-weight: 600;
+}
+
+.legal-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.legal-prose th {
+  color: #f0f4ff;
+  text-align: left;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.legal-prose td {
+  color: rgba(240, 244, 255, 0.62);
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: top;
+}
+
+/* ── FAQ accordion (centre d'aide) ── */
+.faq-item summary {
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
 }
