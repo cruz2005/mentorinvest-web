@@ -14,7 +14,7 @@ export default function ConditionsGeneralesContent() {
         intro={
           <p>
             These Terms of Service (&quot;Terms&quot;) govern access to and
-            use of the mentorinvest.fr website and the MentorInvest mobile
+            use of the mentorinvest.app website and the MentorInvest mobile
             application (the &quot;Service&quot;). By creating an account or
             using the Service, you accept these Terms without reservation.
           </p>
@@ -83,8 +83,8 @@ export default function ConditionsGeneralesContent() {
                   credentials confidential and for all activity carried out
                   through your account. Any suspected unauthorized use of
                   your account must be reported immediately to{" "}
-                  <a href="mailto:contact@mentorinvest.fr">
-                    contact@mentorinvest.fr
+                  <a href="mailto:contact@mentorinvest.app">
+                    contact@mentorinvest.app
                   </a>
                   .
                 </p>
@@ -150,8 +150,8 @@ export default function ConditionsGeneralesContent() {
                 <p>
                   You can cancel your subscription at any time from your
                   account settings or by contacting{" "}
-                  <a href="mailto:contact@mentorinvest.fr">
-                    contact@mentorinvest.fr
+                  <a href="mailto:contact@mentorinvest.app">
+                    contact@mentorinvest.app
                   </a>
                   . Cancellation takes effect at the end of the current
                   billing period: access to paid features remains active
@@ -165,8 +165,8 @@ export default function ConditionsGeneralesContent() {
                   non-refundable. MentorInvest nonetheless reserves the
                   right to review, on a case-by-case basis, any exceptional
                   refund request sent to{" "}
-                  <a href="mailto:contact@mentorinvest.fr">
-                    contact@mentorinvest.fr
+                  <a href="mailto:contact@mentorinvest.app">
+                    contact@mentorinvest.app
                   </a>
                   .
                 </p>
@@ -287,7 +287,7 @@ export default function ConditionsGeneralesContent() {
         <p>
           Les présentes conditions générales d&apos;utilisation (« CGU »)
           régissent l&apos;accès et l&apos;utilisation du site
-          mentorinvest.fr et de l&apos;application mobile MentorInvest (« le
+          mentorinvest.app et de l&apos;application mobile MentorInvest (« le
           Service »). En créant un compte ou en utilisant le Service, tu
           acceptes sans réserve les présentes CGU.
         </p>
@@ -361,8 +361,8 @@ export default function ConditionsGeneralesContent() {
                 identifiants de connexion et de toute activité réalisée
                 depuis ton compte. Toute suspicion d&apos;utilisation non
                 autorisée de ton compte doit être signalée sans délai à{" "}
-                <a href="mailto:contact@mentorinvest.fr">
-                  contact@mentorinvest.fr
+                <a href="mailto:contact@mentorinvest.app">
+                  contact@mentorinvest.app
                 </a>
                 .
               </p>
@@ -429,8 +429,8 @@ export default function ConditionsGeneralesContent() {
               <p>
                 Tu peux résilier ton abonnement à tout moment depuis les
                 paramètres de ton compte ou en contactant{" "}
-                <a href="mailto:contact@mentorinvest.fr">
-                  contact@mentorinvest.fr
+                <a href="mailto:contact@mentorinvest.app">
+                  contact@mentorinvest.app
                 </a>
                 . La résiliation prend effet à la fin de la période de
                 facturation en cours : l&apos;accès aux fonctionnalités
@@ -446,8 +446,8 @@ export default function ConditionsGeneralesContent() {
                 MentorInvest se réserve toutefois la possibilité
                 d&apos;étudier, au cas par cas, toute demande de
                 remboursement exceptionnelle adressée à{" "}
-                <a href="mailto:contact@mentorinvest.fr">
-                  contact@mentorinvest.fr
+                <a href="mailto:contact@mentorinvest.app">
+                  contact@mentorinvest.app
                 </a>
                 .
               </p>

@@ -16,7 +16,7 @@ export default function CTA() {
   }
 
   return (
-    <section className="py-24 px-6 relative overflow-hidden">
+    <section className="py-12 px-6 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-[#131722]" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#2962FF]/10 blur-[100px] pointer-events-none" />

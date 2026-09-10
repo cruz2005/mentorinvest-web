@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -49,10 +49,31 @@ export default function Screenshots() {
   const [active, setActive] = useState(0);
   const activeKey = screenKeys[active];
 
+  /* ── Swipe tactile (mobile / tablette) ── */
+  const touchStartX = useRef<number | null>(null);
+  const SWIPE_THRESHOLD = 40;
+
+  function handleTouchStart(e: React.TouchEvent) {
+    touchStartX.current = e.touches[0].clientX;
+  }
+
+  function handleTouchEnd(e: React.TouchEvent) {
+    if (touchStartX.current === null) return;
+    const deltaX = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
+      if (deltaX < 0) {
+        setActive((i) => Math.min(i + 1, screens.length - 1)); // swipe left → suivant
+      } else {
+        setActive((i) => Math.max(i - 1, 0)); // swipe right → précédent
+      }
+    }
+    touchStartX.current = null;
+  }
+
   return (
     <section
       id="screenshots"
-      className="py-14 px-6 relative overflow-hidden"
+      className="py-10 px-6 relative overflow-hidden"
       style={{ backgroundColor: "#000000" }}
     >
       {/* Ambient glow */}
@@ -99,9 +120,12 @@ export default function Screenshots() {
         </div>
 
         {/* ── Screenshots côte à côte, rapprochées et centrées (empilées sur mobile) ── */}
+        {/* Swipe tactile actif sur mobile/tablette (événements touch natifs, sans effet sur desktop) */}
         <div
-          className="flex flex-col md:flex-row items-center md:items-end justify-center w-full px-4 md:px-0"
+          className="flex flex-col md:flex-row items-center md:items-end justify-center w-full px-4 md:px-0 touch-pan-y"
           style={{ gap: "16px" }}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
         >
           <ScreenshotImage
             src={`/screenshots/mobile-${activeKey}.png`}

@@ -25,11 +25,11 @@ export default function PolitiqueConfidentialiteContent() {
             content: (
               <p>
                 The data controller for personal data collected via the
-                mentorinvest.fr website and the MentorInvest application is
+                mentorinvest.app website and the MentorInvest application is
                 MentorInvest, a company based in France. For any question
                 regarding your personal data, you can contact us at{" "}
-                <a href="mailto:contact@mentorinvest.fr">
-                  contact@mentorinvest.fr
+                <a href="mailto:contact@mentorinvest.app">
+                  contact@mentorinvest.app
                 </a>
                 .
               </p>
@@ -134,7 +134,7 @@ export default function PolitiqueConfidentialiteContent() {
             heading: "6. Transfers outside the European Union",
             content: (
               <p>
-                The mentorinvest.fr website is hosted by Vercel Inc. and
+                The mentorinvest.app website is hosted by Vercel Inc. and
                 user data is managed via Supabase Inc., two providers whose
                 infrastructure may involve processing data outside the
                 European Union (notably in the United States). These
@@ -150,7 +150,7 @@ export default function PolitiqueConfidentialiteContent() {
             content: (
               <>
                 <p>
-                  The mentorinvest.fr website uses cookies strictly
+                  The mentorinvest.app website uses cookies strictly
                   necessary for its operation (for example, to remember your
                   display preferences). These cookies do not require your
                   prior consent, in accordance with applicable regulations.
@@ -201,8 +201,8 @@ export default function PolitiqueConfidentialiteContent() {
                 </ul>
                 <p>
                   To exercise any of these rights, contact us at{" "}
-                  <a href="mailto:contact@mentorinvest.fr">
-                    contact@mentorinvest.fr
+                  <a href="mailto:contact@mentorinvest.app">
+                    contact@mentorinvest.app
                   </a>
                   . We are committed to responding within one month at most.
                 </p>
@@ -228,8 +228,8 @@ export default function PolitiqueConfidentialiteContent() {
                 <p>
                   For any question regarding this privacy policy or the
                   processing of your personal data, you can contact us at{" "}
-                  <a href="mailto:contact@mentorinvest.fr">
-                    contact@mentorinvest.fr
+                  <a href="mailto:contact@mentorinvest.app">
+                    contact@mentorinvest.app
                   </a>
                   .
                 </p>
@@ -271,12 +271,12 @@ export default function PolitiqueConfidentialiteContent() {
           content: (
             <p>
               Le responsable du traitement des données personnelles
-              collectées via le site mentorinvest.fr et l&apos;application
+              collectées via le site mentorinvest.app et l&apos;application
               MentorInvest est MentorInvest, société implantée en France.
               Pour toute question relative à tes données personnelles, tu
               peux nous contacter à l&apos;adresse{" "}
-              <a href="mailto:contact@mentorinvest.fr">
-                contact@mentorinvest.fr
+              <a href="mailto:contact@mentorinvest.app">
+                contact@mentorinvest.app
               </a>
               .
             </p>
@@ -386,7 +386,7 @@ export default function PolitiqueConfidentialiteContent() {
           heading: "6. Transferts hors Union européenne",
           content: (
             <p>
-              Le site mentorinvest.fr est hébergé par Vercel Inc. et les
+              Le site mentorinvest.app est hébergé par Vercel Inc. et les
               données utilisateurs sont gérées via Supabase Inc., deux
               prestataires dont l&apos;infrastructure peut impliquer un
               traitement de données en dehors de l&apos;Union européenne
@@ -403,7 +403,7 @@ export default function PolitiqueConfidentialiteContent() {
           content: (
             <>
               <p>
-                Le site mentorinvest.fr utilise des cookies strictement
+                Le site mentorinvest.app utilise des cookies strictement
                 nécessaires à son fonctionnement (par exemple pour retenir
                 tes préférences d&apos;affichage). Ces cookies ne
                 nécessitent pas ton consentement préalable, conformément à
@@ -457,8 +457,8 @@ export default function PolitiqueConfidentialiteContent() {
               </ul>
               <p>
                 Pour exercer l&apos;un de ces droits, contacte-nous à{" "}
-                <a href="mailto:contact@mentorinvest.fr">
-                  contact@mentorinvest.fr
+                <a href="mailto:contact@mentorinvest.app">
+                  contact@mentorinvest.app
                 </a>
                 . Nous nous engageons à répondre dans un délai maximal
                 d&apos;un mois.
@@ -486,8 +486,8 @@ export default function PolitiqueConfidentialiteContent() {
                 Pour toute question relative à cette politique de
                 confidentialité ou au traitement de tes données
                 personnelles, tu peux nous contacter à l&apos;adresse{" "}
-                <a href="mailto:contact@mentorinvest.fr">
-                  contact@mentorinvest.fr
+                <a href="mailto:contact@mentorinvest.app">
+                  contact@mentorinvest.app
                 </a>
                 .
               </p>

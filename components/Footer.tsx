@@ -34,7 +34,7 @@ const socials = [
 // index with the translated column/link labels from messages/*.json.
 const columnHrefs = [
   ["/#features", "/#screenshots", "/#pricing", "/guide"],
-  ["/centre-aide", "mailto:contact@mentorinvest.fr", "/guide"],
+  ["/centre-aide", "mailto:contact@mentorinvest.app", "/guide"],
   ["/about", "/notre-mission", "/mentions-legales"],
   ["/politique-confidentialite", "/conditions-generales", "/mentions-legales"],
 ];

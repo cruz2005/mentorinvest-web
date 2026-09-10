@@ -40,7 +40,7 @@ export default function Pricing() {
   const proPlan = plans[2];
 
   return (
-    <section id="pricing" className="py-24 px-6 relative">
+    <section id="pricing" className="py-12 px-6 relative">
       <div className="absolute inset-0 grid-bg opacity-30" />
 
       <div className="relative z-10 max-w-6xl mx-auto">

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { ArrowRight, TrendingUp, Shield, Zap, Check, Apple, PlayCircle } from "lucide-react";
+import { ArrowRight, TrendingUp, Newspaper, Zap, Check, Apple, PlayCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
@@ -46,7 +46,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden px-6 pt-24 md:pt-28 pb-16"
+      className="relative min-h-[70vh] flex items-center overflow-hidden px-6 pt-24 md:pt-28 pb-10"
       style={{ backgroundColor: "#080a0e" }}
     >
       {/* Ambient glow */}
@@ -69,8 +69,8 @@ export default function Hero() {
 
           {/* H1 */}
           <h1
-            className="mb-6 font-bold tracking-tight leading-[1.04]"
-            style={{ fontSize: "clamp(2.4rem, 5.2vw, 4.6rem)", color: "#f0f4ff" }}
+            className="mb-6 font-bold tracking-tight leading-[1.04] text-[3.05rem] sm:text-[3.2rem] md:text-[3.4rem] lg:text-[clamp(2.4rem,5.2vw,4.6rem)]"
+            style={{ color: "#f0f4ff" }}
           >
             {WHITE_WORDS.map((w, i) => (
               <motion.span
@@ -116,7 +116,7 @@ export default function Hero() {
             {[
               { icon: <TrendingUp size={12} />, label: t("chipLive") },
               { icon: <Zap        size={12} />, label: t("chipMentor") },
-              { icon: <Shield     size={12} />, label: t("chipSecure") },
+              { icon: <Newspaper  size={12} />, label: t("chipSecure") },
             ].map((b, i) => (
               <span key={i}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium"
@@ -166,6 +166,12 @@ export default function Hero() {
               </div>
             ) : (
               <>
+                <p
+                  className="mb-3 mx-auto text-center text-sm"
+                  style={{ color: "rgba(255,255,255,0.45)", maxWidth: "400px" }}
+                >
+                  {t("waitlistNote")}
+                </p>
                 <form onSubmit={handleSubmit} className="flex gap-2">
                   <input
                     type="email" required placeholder={tc("emailPlaceholder")}
@@ -182,12 +188,6 @@ export default function Hero() {
                 </form>
                 <p className="text-xs mt-2.5" style={{ color: "rgba(240,244,255,0.28)" }}>
                   {t("freeNoCard")}
-                </p>
-                <p
-                  className="mt-3 mx-auto text-center"
-                  style={{ fontSize: "12px", color: "rgba(255,255,255,0.45)", maxWidth: "400px" }}
-                >
-                  {t("waitlistNote")}
                 </p>
               </>
             )}

@@ -78,7 +78,7 @@ export default function Features() {
   const headerIn  = useInView(headerRef, { once: true, margin: "-80px" });
 
   return (
-    <section id="features" className="py-28 px-6 relative">
+    <section id="features" className="py-12 px-6 relative">
       <div className="absolute inset-0 grid-bg opacity-40" />
 
       <div className="relative z-10 max-w-6xl mx-auto">

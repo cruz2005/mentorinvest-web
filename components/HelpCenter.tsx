@@ -81,7 +81,7 @@ const categoriesFr: FaqCategory[] = [
       },
       {
         q: "Comment résilier mon abonnement ?",
-        a: "Tu peux résilier ton abonnement à tout moment depuis les paramètres de ton compte, ou en écrivant à contact@mentorinvest.fr. La résiliation prend effet à la fin de la période de facturation en cours, sans reconduction ultérieure.",
+        a: "Tu peux résilier ton abonnement à tout moment depuis les paramètres de ton compte, ou en écrivant à contact@mentorinvest.app. La résiliation prend effet à la fin de la période de facturation en cours, sans reconduction ultérieure.",
       },
       {
         q: "Puis-je changer de plan à tout moment ?",
@@ -98,19 +98,19 @@ const categoriesFr: FaqCategory[] = [
     items: [
       {
         q: "L'application ne charge pas, que faire ?",
-        a: "Vérifie d'abord ta connexion internet, puis force la fermeture de l'application et relance-la. Si le problème persiste, assure-toi que l'application est à jour depuis ton store. Si le souci continue, écris-nous à contact@mentorinvest.fr en précisant ton modèle d'appareil et la version de l'application.",
+        a: "Vérifie d'abord ta connexion internet, puis force la fermeture de l'application et relance-la. Si le problème persiste, assure-toi que l'application est à jour depuis ton store. Si le souci continue, écris-nous à contact@mentorinvest.app en précisant ton modèle d'appareil et la version de l'application.",
       },
       {
         q: "Les données de marché semblent incorrectes ou retardées",
-        a: "Les données affichées proviennent de fournisseurs de marché tiers et peuvent, dans de rares cas, présenter un léger décalage temporel. Si tu constates une anomalie durable ou répétée, signale-la nous à contact@mentorinvest.fr avec l'actif concerné, afin que nous puissions vérifier la source des données.",
+        a: "Les données affichées proviennent de fournisseurs de marché tiers et peuvent, dans de rares cas, présenter un léger décalage temporel. Si tu constates une anomalie durable ou répétée, signale-la nous à contact@mentorinvest.app avec l'actif concerné, afin que nous puissions vérifier la source des données.",
       },
       {
         q: "Je ne reçois pas mes alertes de prix",
-        a: "Vérifie que les notifications sont autorisées pour MentorInvest dans les réglages de ton téléphone, et que l'alerte est toujours active dans l'application. Si le problème persiste, contacte-nous à contact@mentorinvest.fr.",
+        a: "Vérifie que les notifications sont autorisées pour MentorInvest dans les réglages de ton téléphone, et que l'alerte est toujours active dans l'application. Si le problème persiste, contacte-nous à contact@mentorinvest.app.",
       },
       {
         q: "Comment signaler un bug ?",
-        a: "Écris-nous à contact@mentorinvest.fr en décrivant le problème rencontré, les étapes pour le reproduire et, si possible, une capture d'écran. Notre équipe technique traite chaque signalement.",
+        a: "Écris-nous à contact@mentorinvest.app en décrivant le problème rencontré, les étapes pour le reproduire et, si possible, une capture d'écran. Notre équipe technique traite chaque signalement.",
       },
     ],
   },
@@ -127,7 +127,7 @@ const categoriesFr: FaqCategory[] = [
       },
       {
         q: "Comment supprimer mon compte et mes données ?",
-        a: "Tu peux demander la suppression de ton compte et de tes données personnelles à tout moment en écrivant à contact@mentorinvest.fr. Nous traitons chaque demande dans un délai maximal d'un mois, conformément au RGPD.",
+        a: "Tu peux demander la suppression de ton compte et de tes données personnelles à tout moment en écrivant à contact@mentorinvest.app. Nous traitons chaque demande dans un délai maximal d'un mois, conformément au RGPD.",
       },
       {
         q: "Où sont hébergées mes données ?",
@@ -205,7 +205,7 @@ const categoriesEn: FaqCategory[] = [
       },
       {
         q: "How do I cancel my subscription?",
-        a: "You can cancel your subscription anytime from your account settings, or by emailing contact@mentorinvest.fr. Cancellation takes effect at the end of the current billing period, with no further renewal.",
+        a: "You can cancel your subscription anytime from your account settings, or by emailing contact@mentorinvest.app. Cancellation takes effect at the end of the current billing period, with no further renewal.",
       },
       {
         q: "Can I change plans anytime?",
@@ -222,19 +222,19 @@ const categoriesEn: FaqCategory[] = [
     items: [
       {
         q: "The app won't load — what should I do?",
-        a: "First check your internet connection, then force-close the app and relaunch it. If the issue persists, make sure the app is up to date from your store. If it still doesn't work, email us at contact@mentorinvest.fr with your device model and app version.",
+        a: "First check your internet connection, then force-close the app and relaunch it. If the issue persists, make sure the app is up to date from your store. If it still doesn't work, email us at contact@mentorinvest.app with your device model and app version.",
       },
       {
         q: "The market data looks incorrect or delayed",
-        a: "The data shown comes from third-party market providers and may, in rare cases, be slightly delayed. If you notice a persistent or repeated issue, let us know at contact@mentorinvest.fr with the asset in question, so we can check the data source.",
+        a: "The data shown comes from third-party market providers and may, in rare cases, be slightly delayed. If you notice a persistent or repeated issue, let us know at contact@mentorinvest.app with the asset in question, so we can check the data source.",
       },
       {
         q: "I'm not receiving my price alerts",
-        a: "Check that notifications are enabled for MentorInvest in your phone's settings, and that the alert is still active in the app. If the issue persists, contact us at contact@mentorinvest.fr.",
+        a: "Check that notifications are enabled for MentorInvest in your phone's settings, and that the alert is still active in the app. If the issue persists, contact us at contact@mentorinvest.app.",
       },
       {
         q: "How do I report a bug?",
-        a: "Email us at contact@mentorinvest.fr describing the issue, the steps to reproduce it, and a screenshot if possible. Our technical team reviews every report.",
+        a: "Email us at contact@mentorinvest.app describing the issue, the steps to reproduce it, and a screenshot if possible. Our technical team reviews every report.",
       },
     ],
   },
@@ -251,7 +251,7 @@ const categoriesEn: FaqCategory[] = [
       },
       {
         q: "How do I delete my account and data?",
-        a: "You can request the deletion of your account and personal data at any time by emailing contact@mentorinvest.fr. We process every request within one month at most, in line with GDPR.",
+        a: "You can request the deletion of your account and personal data at any time by emailing contact@mentorinvest.app. We process every request within one month at most, in line with GDPR.",
       },
       {
         q: "Where is my data hosted?",
@@ -366,7 +366,7 @@ export default function HelpCenter() {
           </div>
 
           <a
-            href="mailto:contact@mentorinvest.fr"
+            href="mailto:contact@mentorinvest.app"
             className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all hover:brightness-110"
             style={{ background: "rgba(37,99,255,0.10)", border: "1px solid rgba(37,99,255,0.25)", color: "#4f83ff" }}
           >
@@ -397,7 +397,7 @@ export default function HelpCenter() {
               <p className="mt-2 text-sm" style={{ color: "rgba(240,244,255,0.35)" }}>
                 {en ? "Try another keyword, or " : "Essaie un autre mot-clé, ou "}
                 <a
-                  href="mailto:contact@mentorinvest.fr"
+                  href="mailto:contact@mentorinvest.app"
                   className="underline"
                   style={{ color: "#4f83ff" }}
                 >

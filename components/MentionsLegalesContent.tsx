@@ -13,7 +13,7 @@ export default function MentionsLegalesContent() {
         lastUpdated="August 25, 2026"
         intro={
           <p>
-            This legal notice applies to the mentorinvest.fr website as well
+            This legal notice applies to the mentorinvest.app website as well
             as the MentorInvest mobile application (hereinafter the
             &quot;Service&quot;). By accessing the Service, you acknowledge
             that you have read and understood this notice.
@@ -25,7 +25,7 @@ export default function MentionsLegalesContent() {
             content: (
               <>
                 <p>
-                  The mentorinvest.fr website and the MentorInvest mobile
+                  The mentorinvest.app website and the MentorInvest mobile
                   application are published by MentorInvest, a company
                   registered in France.
                 </p>
@@ -34,8 +34,8 @@ export default function MentionsLegalesContent() {
                   <li>Country: France</li>
                   <li>
                     Contact:{" "}
-                    <a href="mailto:contact@mentorinvest.fr">
-                      contact@mentorinvest.fr
+                    <a href="mailto:contact@mentorinvest.app">
+                      contact@mentorinvest.app
                     </a>
                   </li>
                 </ul>
@@ -55,8 +55,8 @@ export default function MentionsLegalesContent() {
                 Publication of the site and application is overseen by
                 MentorInvest&apos;s legal representative. For any question
                 regarding published content, you can contact us at{" "}
-                <a href="mailto:contact@mentorinvest.fr">
-                  contact@mentorinvest.fr
+                <a href="mailto:contact@mentorinvest.app">
+                  contact@mentorinvest.app
                 </a>
                 .
               </p>
@@ -68,7 +68,7 @@ export default function MentionsLegalesContent() {
               <>
                 <h3>Website hosting</h3>
                 <p>
-                  The mentorinvest.fr website is hosted by Vercel Inc., 340 S
+                  The mentorinvest.app website is hosted by Vercel Inc., 340 S
                   Lemon Ave #4133, Walnut, CA 91789, United States. For more
                   information on Vercel&apos;s infrastructure, see their
                   public documentation.
@@ -133,7 +133,7 @@ export default function MentionsLegalesContent() {
             heading: "6. Cookies",
             content: (
               <p>
-                The mentorinvest.fr website may use cookies strictly
+                The mentorinvest.app website may use cookies strictly
                 necessary for its operation, as well as, where applicable,
                 audience-measurement cookies. No advertising or third-party
                 tracking cookie is set without your prior consent. Details
@@ -232,8 +232,8 @@ export default function MentionsLegalesContent() {
               <p>
                 This legal notice is governed by French law. For any
                 question regarding this notice, you can contact us at{" "}
-                <a href="mailto:contact@mentorinvest.fr">
-                  contact@mentorinvest.fr
+                <a href="mailto:contact@mentorinvest.app">
+                  contact@mentorinvest.app
                 </a>
                 .
               </p>
@@ -252,7 +252,7 @@ export default function MentionsLegalesContent() {
       intro={
         <p>
           Les présentes mentions légales s&apos;appliquent au site
-          mentorinvest.fr ainsi qu&apos;à l&apos;application mobile
+          mentorinvest.app ainsi qu&apos;à l&apos;application mobile
           MentorInvest (ci-après « le Service »). En accédant au Service,
           vous reconnaissez avoir pris connaissance des présentes mentions.
         </p>
@@ -263,7 +263,7 @@ export default function MentionsLegalesContent() {
           content: (
             <>
               <p>
-                Le site mentorinvest.fr et l&apos;application mobile
+                Le site mentorinvest.app et l&apos;application mobile
                 MentorInvest sont édités par MentorInvest, société immatriculée
                 en France.
               </p>
@@ -272,8 +272,8 @@ export default function MentionsLegalesContent() {
                 <li>Pays d&apos;implantation : France</li>
                 <li>
                   Contact :{" "}
-                  <a href="mailto:contact@mentorinvest.fr">
-                    contact@mentorinvest.fr
+                  <a href="mailto:contact@mentorinvest.app">
+                    contact@mentorinvest.app
                   </a>
                 </li>
               </ul>
@@ -295,8 +295,8 @@ export default function MentionsLegalesContent() {
               est assurée par le représentant légal de MentorInvest. Pour
               toute question relative au contenu publié, vous pouvez
               contacter la rédaction à l&apos;adresse{" "}
-              <a href="mailto:contact@mentorinvest.fr">
-                contact@mentorinvest.fr
+              <a href="mailto:contact@mentorinvest.app">
+                contact@mentorinvest.app
               </a>
               .
             </p>
@@ -308,7 +308,7 @@ export default function MentionsLegalesContent() {
             <>
               <h3>Hébergement du site web</h3>
               <p>
-                Le site mentorinvest.fr est hébergé par Vercel Inc., 340 S
+                Le site mentorinvest.app est hébergé par Vercel Inc., 340 S
                 Lemon Ave #4133, Walnut, CA 91789, États-Unis. Pour plus
                 d&apos;informations sur l&apos;infrastructure de Vercel,
                 consultez leur documentation publique.
@@ -382,7 +382,7 @@ export default function MentionsLegalesContent() {
           heading: "6. Cookies",
           content: (
             <p>
-              Le site mentorinvest.fr peut utiliser des cookies strictement
+              Le site mentorinvest.app peut utiliser des cookies strictement
               nécessaires à son fonctionnement ainsi que, le cas échéant,
               des cookies de mesure d&apos;audience. Aucun cookie
               publicitaire ou de traçage tiers n&apos;est déposé sans votre
@@ -493,8 +493,8 @@ export default function MentionsLegalesContent() {
               Les présentes mentions légales sont soumises au droit
               français. Pour toute question relative à ces mentions, vous
               pouvez nous contacter à{" "}
-              <a href="mailto:contact@mentorinvest.fr">
-                contact@mentorinvest.fr
+              <a href="mailto:contact@mentorinvest.app">
+                contact@mentorinvest.app
               </a>
               .
             </p>
