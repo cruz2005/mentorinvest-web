@@ -14,6 +14,8 @@
     "comingSoonStores": "Coming soon to the App Store & Google Play",
     "emailPlaceholder": "you@email.com",
     "joinedWaitlist": "You're on the list — we'll be in touch at launch!",
+    "invalidEmail": "Invalid email address.",
+    "waitlistError": "Couldn't save your email right now. Please try again later.",
     "appStore": "App Store",
     "googlePlay": "Google Play",
     "availableNow": "Available now · iOS & Android"

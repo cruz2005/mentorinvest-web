@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import CandleBackground from "@/components/CandleBackground";
 import { SHOW_WAITLIST, APP_STORE_URL, PLAY_STORE_URL } from "@/lib/config";
+import { submitWaitlist } from "@/lib/waitlist";
 
 /* ── Globe (client-only) ── */
 const Globe3D = dynamic(() => import("@/components/Globe3D"), {
@@ -37,10 +38,21 @@ export default function Hero() {
 
   const [email, setEmail]         = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError]         = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (email) setSubmitted(true);
+    if (!email || submitting) return;
+    setSubmitting(true);
+    setError(null);
+    const result = await submitWaitlist(email);
+    setSubmitting(false);
+    if (result.ok) {
+      setSubmitted(true);
+    } else {
+      setError(result.error === "invalid_email" ? tc("invalidEmail") : tc("waitlistError"));
+    }
   }
 
   return (
@@ -179,16 +191,22 @@ export default function Hero() {
                     className="flex-1 px-4 py-3.5 rounded-xl text-sm focus:outline-none"
                     style={{ background: "#0c1120", border: "1px solid rgba(255,255,255,0.08)", color: "#f0f4ff" }}
                   />
-                  <button type="submit"
-                    className="px-5 py-3.5 rounded-xl font-semibold text-sm flex items-center gap-2 whitespace-nowrap hover:brightness-110 active:scale-95 transition-all"
+                  <button type="submit" disabled={submitting}
+                    className="px-5 py-3.5 rounded-xl font-semibold text-sm flex items-center gap-2 whitespace-nowrap hover:brightness-110 active:scale-95 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                     style={{ background: "#2563ff", color: "#fff", boxShadow: "0 0 28px rgba(37,99,255,0.26)" }}
                   >
                     {t("joinButton")} <ArrowRight size={14} />
                   </button>
                 </form>
-                <p className="text-xs mt-2.5" style={{ color: "rgba(240,244,255,0.28)" }}>
-                  {t("freeNoCard")}
-                </p>
+                {error ? (
+                  <p className="text-xs mt-2.5" style={{ color: "#ef4444" }}>
+                    {error}
+                  </p>
+                ) : (
+                  <p className="text-xs mt-2.5" style={{ color: "rgba(240,244,255,0.28)" }}>
+                    {t("freeNoCard")}
+                  </p>
+                )}
               </>
             )}
           </motion.div>

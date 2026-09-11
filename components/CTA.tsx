@@ -3,16 +3,28 @@ import { useState } from "react";
 import { ArrowRight, Check, Apple, PlayCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SHOW_WAITLIST, APP_STORE_URL, PLAY_STORE_URL } from "@/lib/config";
+import { submitWaitlist } from "@/lib/waitlist";
 
 export default function CTA() {
   const t = useTranslations("cta");
   const tc = useTranslations("common");
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (email) setSubmitted(true);
+    if (!email || submitting) return;
+    setSubmitting(true);
+    setError(null);
+    const result = await submitWaitlist(email);
+    setSubmitting(false);
+    if (result.ok) {
+      setSubmitted(true);
+    } else {
+      setError(result.error === "invalid_email" ? tc("invalidEmail") : tc("waitlistError"));
+    }
   }
 
   return (
@@ -74,11 +86,17 @@ export default function CTA() {
               />
               <button
                 type="submit"
-                className="px-6 py-4 rounded-xl bg-[#2962FF] hover:bg-[#1a4fd6] text-white font-semibold text-sm transition-all flex items-center justify-center gap-2 glow-blue whitespace-nowrap"
+                disabled={submitting}
+                className="px-6 py-4 rounded-xl bg-[#2962FF] hover:bg-[#1a4fd6] text-white font-semibold text-sm transition-all flex items-center justify-center gap-2 glow-blue whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {t("joinButton")} <ArrowRight size={16} />
               </button>
             </form>
+            {error && (
+              <p className="text-sm mt-3" style={{ color: "#ef4444" }}>
+                {error}
+              </p>
+            )}
           </>
         )}
       </div>
